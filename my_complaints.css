@@ -88,3 +88,19 @@ th {
     border-radius: 14px;
     color: #cbd5e1;
 }
+
+.download-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #16a34a;
+}
