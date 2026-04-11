@@ -1,4 +1,4 @@
- <?php
+<?php
 session_start();
 include("../db.php");
 
@@ -26,10 +26,8 @@ if (!$result) {
 
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">🛡 Admin Panel</div>
-
+        <div class="logo">Admin Panel</div>
         <ul class="nav-links">
-            <li><a href="../home.php">Home</a></li>
             <li><a href="admin_dashboard.php">Dashboard</a></li>
             <li>
                 <input type="text" id="searchInput" placeholder="Search by Complaint ID">
@@ -38,12 +36,19 @@ if (!$result) {
         </ul>
     </nav>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Complaint Management</h1>
+        <p>Review all public complaints, inspect evidence, and update resolution workflows.</p>
+    </section>
+
     <!-- Admin Name Section -->
     <div class="admin-info">
         Welcome Admin: <strong><?php echo $admin_name; ?></strong>
     </div>
 
-    <div class="table-container">
+    <!-- Table Section -->
+    <section class="table-container">
         <h2>All Public Complaints</h2>
 
         <table id="complaintTable">
@@ -70,13 +75,15 @@ if (!$result) {
 
                 <td>
                     <?php if (!empty($row['image'])) { ?>
-                        <img src="../<?php echo $row['image']; ?>" alt="Complaint Image">
+                        <img src="../<?php echo $row['image']; ?>" alt="Complaint Image" class="evidence-img">
                     <?php } else { ?>
                         No Image
                     <?php } ?>
                 </td>
 
-                <td><?php echo $row['status']; ?></td>
+                <td>
+                    <span class="status-badge"><?php echo $row['status']; ?></span>
+                </td>
 
                 <td>
                     <a class="update-btn" href="update_status.php?id=<?php echo $row['id']; ?>">Update</a>
@@ -84,7 +91,7 @@ if (!$result) {
             </tr>
             <?php } ?>
         </table>
-    </div>
+    </section>
 
     <script src="view_complaints.js"></script>
 </body>
