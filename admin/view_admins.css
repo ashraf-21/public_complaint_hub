@@ -6,8 +6,8 @@
 }
 
 body {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
+    background: #f5f5f5;
+    color: #222;
     min-height: 100vh;
 }
 
@@ -16,14 +16,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 18px 40px;
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(12px);
+    background: #ffffff;
+    border-bottom: 1px solid #ccc;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #facc15;
+    color: #222;
 }
 
 .nav-links {
@@ -33,7 +33,7 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: #333;
     text-decoration: none;
 }
 
@@ -45,10 +45,11 @@ body {
 .hero h1 {
     font-size: 40px;
     margin-bottom: 10px;
+    color: #222;
 }
 
 .hero p {
-    color: #cbd5e1;
+    color: #555;
 }
 
 .table-section {
@@ -58,29 +59,29 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-    background: rgba(255,255,255,0.06);
-    border-radius: 12px;
-    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #ccc;
 }
 
 th, td {
     padding: 15px;
     text-align: center;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid #ccc;
+    color: #222;
 }
 
 th {
-    background: rgba(255,255,255,0.08);
-    color: #7dd3fc;
+    background: #f0f0f0;
+    color: #222;
 }
 
 .active {
-    color: #22c55e;
+    color: green;
     font-weight: bold;
 }
 
 .inactive {
-    color: #ef4444;
+    color: red;
     font-weight: bold;
 }
 
@@ -88,16 +89,16 @@ th {
 .delete-btn {
     display: inline-block;
     padding: 8px 14px;
-    border-radius: 8px;
+    border-radius: 6px;
     text-decoration: none;
     color: white;
     margin: 0 5px;
 }
 
 .action-btn {
-    background: #2563eb;
+    background: #007bff;
 }
 
 .delete-btn {
-    background: #dc2626;
+    background: #dc3545;
 }

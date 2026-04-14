@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 
     <nav class="navbar">
-        <div class="logo">📢 User Portal</div>
+        <div class="logo">User Portal</div>
         <ul class="nav-links">
             <li><a href="home.php">Home</a></li>
             <li><a href="raise_complaint.php">Raise Complaint</a></li>
